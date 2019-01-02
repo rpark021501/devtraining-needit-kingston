@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_58872_needit.AjaxScriptInclude</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>AjaxScriptInclude</name>
+        <script><![CDATA[var AjaxScriptInclude = Class.create();
+AjaxScriptInclude.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	greetingFunction: function(){
+		var userName = this.getParameter('sysparm_my_name');
+		this._getEnglishMsg(userName);
+		this._getFrenchMsg(userName);
+		this._getSpanishMsg(userName);
+	},
+	 _getEnglishMsg: function(userName) { 
+        var greeting = 'Howdy, ' + userName + '. How are you?';
+        var msg = this.newItem('greeting');
+        msg.setAttribute('lang', 'English');
+        msg.setAttribute('value', greeting);
+    },
+    
+    _getFrenchMsg: function(userName) { 
+        var greeting = 'Bonjour, ' + userName + '. Ca-va?';
+        var msg = this.newItem('greeting');
+        msg.setAttribute('lang', 'French');
+        msg.setAttribute('value', greeting);
+    },
+    
+    _getSpanishMsg: function(userName) { 
+        var greeting = 'Hola, ' + userName + '. Cómo estás?';
+        var msg = this.newItem('greeting');
+        msg.setAttribute('lang', 'Spanish');
+        msg.setAttribute('value', greeting);
+    }
+
+    // type: 'AjaxScriptInclude'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-02 14:06:54</sys_created_on>
+        <sys_id>c76a2d91db2d23008e85d360cf9619ae</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>AjaxScriptInclude</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_include_c76a2d91db2d23008e85d360cf9619ae</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-02 14:23:55</sys_updated_on>
+    </sys_script_include>
+</record_update>

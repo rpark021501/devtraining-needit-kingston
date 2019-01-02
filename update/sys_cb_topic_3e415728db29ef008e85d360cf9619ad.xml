@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <connect_queue/>
+        <description/>
+        <graph>{
+  "graph_api_version": "1.0.3",
+  "goals": {
+    "09bb2dd93916456ab831f2816def4409": {
+      "id": "09bb2dd93916456ab831f2816def4409",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "66a433ed44a542bf852c160094ea823a": {
+          "id": "66a433ed44a542bf852c160094ea823a",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "00686b1e3777480cb168eea24a5b61d3": {
+          "id": "00686b1e3777480cb168eea24a5b61d3",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "f85f0411624d4cb4af7459c8ea7f0be5",
+          "edgeType": "Edge",
+          "source": "66a433ed44a542bf852c160094ea823a",
+          "target": "00686b1e3777480cb168eea24a5b61d3",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {}
+}</graph>
+        <key_phrases>Password reset</key_phrases>
+        <live_agent>false</live_agent>
+        <name>Password reset</name>
+        <roles/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-10-31 12:41:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>3e415728db29ef008e85d360cf9619ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Password reset</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_cb_topic_3e415728db29ef008e85d360cf9619ad</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-10-31 12:41:43</sys_updated_on>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="delete_multiple" query="document_key=3e415728db29ef008e85d360cf9619ad"/>
+</record_update>
